@@ -57,7 +57,7 @@ public class RequestParamController {
 
     }
     @ResponseBody // 요청 파라미터랑 같으면(단순타입만) 사실 다 생략 가능
-    @RequestMapping("/request-param-required ")
+    @RequestMapping("/request-param-required")
     public String requestParamRequired(
             @RequestParam(required = true) String username,
             @RequestParam(required = false) int age
@@ -76,7 +76,7 @@ public class RequestParamController {
     }
 
     @ResponseBody //기본값이 설정됨 빈문자까지 처리해줌
-    @RequestMapping("/request-param-ㅡ메")
+    @RequestMapping("/request-param-map")
     public String requestParamMap(
             @RequestParam Map<String, Object> paramMap
     ){
